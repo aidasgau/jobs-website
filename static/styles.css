@@ -1,0 +1,24 @@
+
+
+h1 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: rgb(50,50,50)
+}
+
+h2 {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(100,100,100)
+}
+
+.about_me {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(80,80,80)
+}
+
+#container {
+    margin-left: 30px;
+    max-width: 720px;
+}
