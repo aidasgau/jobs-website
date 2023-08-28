@@ -1,2 +1,2 @@
-# jobs-website
-Jobs website written with Flask for learning purposes
+# my-portfolio
+Portfolio website written with Flask for learning purposes
