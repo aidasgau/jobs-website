@@ -11,26 +11,28 @@
 </head>
 <body class="content">
     <div class="container ms-5">
-        <h1 class="mt-2">{{ full_name }}</h1>
-        <h2>About me</h2>
-        <p class="fs-6">I am a Lithuanian student from Klaipėda University studying CS (Bachelor of Computer Science)
-            During my years in University I've learnt various informatic's technologies including programming languages
-            and its' frameworks, use of various engineering software and other CS skills. I am highly excited about 
-            the AI development of LLMs such as ChatGPT and I am eager to adapt and learn what the AI development brings to the world.
+        <h1 class="my-4" id="full-name">{{ full_name }}</h1>
+        <h2 id="header">About me</h2>
+        <p class="fs-6">I am a Lithuanian student from Klaipėda University studying CS (Bachelor of Computer Science).
+            During my studying years in university I have gained experience writing code in variety of programming languages while developing course projects,
+            gained knowledge of different frameworks and design patterns, developed skills in use of engineering software. I am constantly following the development of the most 
+            advanced technologies in the world such as the development of LLMs and AI such as ChatGPT and I am highly excited about how it is 
+            changing the world of programming and development. Therefore I am eager and motivated to learn and improve at programming and development while harnessing the powerful tools
+            we currently have access to.
         </p>
         <p class="fs-6">Use <a href="">{{ email }}</a> to contact me</p>
-        <h2>Knowledge</h2>
-        <p class="fs-6 knowledge">These are some programming langueges I have experience with</p>
+        <h2 id="header">Knowledge</h2>
+        <p class="fs-6 knowledge">These are some programming langueges and frameworks I have experience with</p>
         <ul class="fs-6">
             <li>
-                <strong class="fs-5">Frontend</strong>
+                <strong class="fs-5" id="semi-header">Frontend</strong>
                 <ul class="fs-6">
                     <li>Bootstrap</li>
                     <li>JavaScript</li>
                 </ul>
             </li>
             <li>
-                <strong class="fs-5">Backend</strong>
+                <strong class="fs-5" id="semi-header">Backend</strong>
                 <ul class="fs-6">
                     <li>MySql</li>
                     <li>Python (Flask)</li>
@@ -39,22 +41,22 @@
                 </ul>
             </li>
         </ul>
-        <p class="fs-6 knowledge">Some other languages I've written code in before and have basic Knowledge of</p>
+        <p class="fs-6 knowledge">Other programming languages I have written code in before and have basic Knowledge of</p>
         <ul class="fs-6">
             <li>C++ (OOP)</li>
             <li>Java (Data structures and algorithms)</li>
         </ul>
-        <p class="fs-6 knowledge">Some software I have experience with</p>
+        <p class="fs-6 knowledge">Software I have experience with</p>
         <ul class="fs-6">
             <li>
-                <strong class="fs-5">3D modeling</strong>
+                <strong class="fs-5" id="semi-header">3D modeling</strong>
                 <ul class="fs-6">
                     <li>SOLIDWORKS</li>
                     <li>OnShape</li>
                 </ul>
             </li>
             <li>
-                <strong class="fs-5">2D and other</strong>
+                <strong class="fs-5" id="semi-header">2D and other</strong>
                 <ul class="fs-6">
                     <li>Autocad</li>
                     <li>Matlab</li>
@@ -62,10 +64,10 @@
                 </ul>
             </li>
         </ul>
-        <p class="fs-6">Most of my experience in programming languages, frameworks and different software comes from University courses and extensive course projects,
-            some of which are on <a href="{{ github }}">My github</a> I also have experience in writing my own projects including discord bots with python.</p>
+        <p class="fs-6">Most of my experience in programming languages, frameworks and different software comes from university courses and extensive course projects during the studying process,
+            some of which are on <a href="{{ github }}">My github</a> I also have experience in writing my own solo projects.</p>
         </div>
-        <p class="text-center mt-5 fs-6">&copy; {{ current_year }}</p>
+        <p class="text-center mt-5 fs-6">&copy; {{ current_year }} {{ full_name }}</p>
         <footer>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         </footer>
