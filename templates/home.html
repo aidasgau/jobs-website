@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aidas Gaučas</title>
+    <title>{{ full_name }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
 </head>
-<body>
-    <div id="container">
-        <h1>Aidas Gaučas</h1>
+<body class="content">
+    <div class="container ms-5">
+        <h1 class="mt-2">{{ full_name }}</h1>
         <h2>About me</h2>
-        <p class="about_me">I am a Lithuanian student from Klaipėda University studying CS (Bachelor of Computer Science)
+        <p class="fs-6">I am a Lithuanian student from Klaipėda University studying CS (Bachelor of Computer Science)
             During my years in University I've learnt various informatic's technologies including programming languages
             and its' frameworks, use of various engineering software and other CS skills. I am highly excited about 
             the AI development of LLMs such as ChatGPT and I am eager to adapt and learn what the AI development brings to the world.
         </p>
+        <p class="fs-6">Use <a href="">{{ email }}</a> to contact me</p>
         <h2>Knowledge</h2>
-        <p class="about_me">These are some programming langueges I have experience with</p>
-        <ul>
+        <p class="fs-6 knowledge">These are some programming langueges I have experience with</p>
+        <ul class="fs-6">
             <li>
-                <strong>Frontend</strong>
-                <ul>
+                <strong class="fs-5">Frontend</strong>
+                <ul class="fs-6">
                     <li>Bootstrap</li>
                     <li>JavaScript</li>
                 </ul>
             </li>
             <li>
-                <strong>Backend</strong>
-                <ul>
+                <strong class="fs-5">Backend</strong>
+                <ul class="fs-6">
                     <li>MySql</li>
                     <li>Python (Flask)</li>
                     <li>C# (ASP.NET MVC)</li>
@@ -35,32 +39,35 @@
                 </ul>
             </li>
         </ul>
-        <p class="about_me">Some other languages I've written code in before and have basic Knowledge of</p>
-        <ul>
+        <p class="fs-6 knowledge">Some other languages I've written code in before and have basic Knowledge of</p>
+        <ul class="fs-6">
             <li>C++ (OOP)</li>
             <li>Java (Data structures and algorithms)</li>
         </ul>
-        <p class="about_me">Some software I have experience with</p>
-        <ul>
+        <p class="fs-6 knowledge">Some software I have experience with</p>
+        <ul class="fs-6">
             <li>
-                <strong>3D modeling</strong>
-                <ul>
+                <strong class="fs-5">3D modeling</strong>
+                <ul class="fs-6">
                     <li>SOLIDWORKS</li>
                     <li>OnShape</li>
                 </ul>
             </li>
             <li>
-                <strong>2D and other</strong>
-                <ul>
+                <strong class="fs-5">2D and other</strong>
+                <ul class="fs-6">
                     <li>Autocad</li>
                     <li>Matlab</li>
                     <li>Maple</li>
                 </ul>
             </li>
         </ul>
-        <p class="about_me">Most of my experience in programming languages, frameworks and different software comes from University courses and extensive course projects,
-            some of which are on <a href="https://github.com/aidasgau">My github</a></p>, however I also have experience in writing my own projects including discord bots with python.
+        <p class="fs-6">Most of my experience in programming languages, frameworks and different software comes from University courses and extensive course projects,
+            some of which are on <a href="{{ github }}">My github</a> I also have experience in writing my own projects including discord bots with python.</p>
         </div>
-        <p>Copyright 2023</p>
+        <p class="text-center mt-5 fs-6">&copy; {{ current_year }}</p>
+        <footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        </footer>
 </body>
 </html>
